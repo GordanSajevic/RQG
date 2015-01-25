@@ -39,14 +39,14 @@ public class User {
 				//Every message is from quotes.txt file
 				
 				String generatorMessage = chat.receiveMessage();
-				System.out.println("Server: " + generatorMessage);
+				System.out.println("Vincent: " + generatorMessage);
 				String homeDir = System.getProperty("user.home");
 				String path = homeDir + File.separator + "workspace" + File.separator + "RQG" + File.separator + 
 						"src" + File.separator + "ba" + File.separator + "bitcamp" + File.separator + "rqg" + 
 						File.separator + "server" + File.separator + "Files" + File.separator + "quotes.txt";
 				File file = new File(path);
 				userMessage = chat.getMessage(file, i);
-				System.out.println("User:" + userMessage);
+				System.out.println("Jules:" + userMessage);
 				chat.sendMessage(userMessage);
 				i += 2;
 			}

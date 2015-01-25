@@ -47,10 +47,10 @@ public class Generator {
 								File.separator + "server" + File.separator + "Files" + File.separator + "quotes.txt";
 						File file = new File(path);
 						String generatorMessage = chat.getMessage(file, i);
-						System.out.println("Server: " + generatorMessage);
+						System.out.println("Vincent: " + generatorMessage);
 						chat.sendMessage(generatorMessage);
 						String userMessage = chat.receiveMessage();
-						System.out.println("User: " + userMessage);
+						System.out.println("Jules: " + userMessage);
 						i += 2;
 					}
 				}
